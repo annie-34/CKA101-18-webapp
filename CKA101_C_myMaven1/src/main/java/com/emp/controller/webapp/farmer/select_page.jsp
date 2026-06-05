@@ -305,7 +305,7 @@
          </c:forEach>   
        </select>
        <input type="hidden" name="action" value="getOne_For_Display">
-       <input type="submit" value="送出">
+       <input type="submit" value="送出"><h4>(1) 屏東香蕉 (2)花蓮香蕉 (3)拉拉山水蜜桃</h4> 
      </FORM>
   </li>
 </ul>
