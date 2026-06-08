@@ -4,9 +4,7 @@ import java.sql.Timestamp;
 import java.util.List;
 
 public class GroupBuyService {
-
     private GroupBuyDAO_interface dao;
-
     public GroupBuyService() {
         dao = new GroupBuyHibernateDAO();
     }
@@ -34,7 +32,6 @@ public class GroupBuyService {
         dao.update(groupBuyVO);
         return groupBuyVO;
     }
-
     public GroupBuyVO addGroupBuy(
             Integer productId,
             Integer hostUserId,
@@ -53,24 +50,20 @@ public class GroupBuyService {
         groupBuy.setOpenDatetime(openDatetime);
         groupBuy.setDdlDatetime(ddlDatetime);
         groupBuy.setPickupAddress(pickupAddres);
-
         groupBuy.setStatus(GroupBuyStatus.pending);
         groupBuy.setRequestStatus(RequestStatus.pending);
         groupBuy.setCreatedAt(new Timestamp(System.currentTimeMillis()));
         groupBuy.setRequestDatetime(new Timestamp(System.currentTimeMillis()));
         groupBuy.setReplyDatetime(null);
         groupBuy.setRejectReason(null);
-
         dao.insert(groupBuy);
-
         return groupBuy;
     }
     public List<ProductOptionVO> getProductOptions() {
         return dao.getProductOptions();
     }
 
-    public GroupBuyVO updateGroupBuy(
-            Integer groupBuyId,
+    public GroupBuyVO updateGroupBuy(Integer groupBuyId,
             Integer productId,
             Integer hostUserId,
             Integer targetAmount,

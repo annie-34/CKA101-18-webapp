@@ -19,17 +19,13 @@ public class GroupBuyHibernateDAO implements GroupBuyDAO_interface {
 	        factory.getCurrentSession();
 	    try {
 	        session.beginTransaction();
-	        GroupBuyVO groupBuy =
-	            session.get(GroupBuyVO.class,
-	                        groupBuyId);
+	        GroupBuyVO groupBuy =session.get(GroupBuyVO.class,groupBuyId);
 	        if(groupBuy != null) {
-	            groupBuy.setRejectReason(
-	                    rejectReason);
-	        }
+	        	groupBuy.setRejectReason(rejectReason);}
 	        session.getTransaction().commit();
 	    } catch(Exception e) {
-	        session.getTransaction().rollback();
-	        e.printStackTrace();
+	    	session.getTransaction().rollback();
+	    e.printStackTrace();
 	    }
 	}
 	@Override

@@ -290,7 +290,7 @@
                         ${product.productId}
                     </option>
                 </c:forEach>
-            </select>
+            </select><h4>(1) 屏東香蕉 (2)花蓮香蕉 (3)拉拉山水蜜桃</h4> 
         </td>
     </tr>
 
