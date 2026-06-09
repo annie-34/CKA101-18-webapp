@@ -1,13 +1,15 @@
-package com.emp.controller;
+package com.farmily.groupbuy.controller;
 
 import java.io.IOException;
 import java.sql.Timestamp;
 import java.util.LinkedList;
 import java.util.List;
 
-import com.emp.model.GroupBuyService;
-import com.emp.model.GroupBuyVO;
-import com.emp.model.ProductOptionVO;
+import com.farmily.groupbuy.model.GroupBuyService;
+import com.farmily.groupbuy.model.GroupBuyStatus;
+import com.farmily.groupbuy.model.GroupBuyVO;
+import com.farmily.groupbuy.model.RequestStatus;
+import com.farmily.product.ProductOptionVO;
 
 import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.ServletException;
@@ -15,8 +17,6 @@ import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
-import com.emp.model.GroupBuyStatus;
-import com.emp.model.RequestStatus;
 @WebServlet("/GroupBuyServlet")//對應到html的action，代表當接收到html的action，從html接收後才可以找得到對應的servlet
 public class GroupBuyServlet extends HttpServlet {
 	public void doGet(HttpServletRequest req,HttpServletResponse res) throws ServletException,IOException {

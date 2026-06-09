@@ -1,6 +1,8 @@
-package com.emp.model;
+package com.farmily.groupbuy.model;
 
 import java.util.*;
+
+import com.farmily.product.ProductOptionVO;
 
 public interface GroupBuyDAO_interface {
           public void insert(GroupBuyVO groupBuyVO);

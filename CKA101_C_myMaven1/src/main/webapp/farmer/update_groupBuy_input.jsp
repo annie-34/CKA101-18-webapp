@@ -1,6 +1,6 @@
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-<%@ page import="com.emp.model.*"%>
+<%@ page import="com.farmily.groupbuy.model.*"%>
 
 <%
 //見com.emp.controller.EmpServlet.java第163行存入req的empVO物件 (此為從資料庫取出的empVO, 也可以是輸入格式有錯誤時的empVO物件)
@@ -354,7 +354,7 @@
 
 </form>
 
-	<jsp:useBean id="groupBuySvc" scope="page" class="com.emp.model.GroupBuyService" />
+	<jsp:useBean id="groupBuySvc" scope="page" class="com.farmily.groupbuy.model.GroupBuyService" />
 <!-- 	<tr> -->
 <!-- 		<td>部門:<font color=red><b>*</b></font></td> -->
 <!-- 		<td><select size="1" name="deptno"> -->

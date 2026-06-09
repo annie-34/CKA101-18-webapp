@@ -1,4 +1,4 @@
-package com.emp.model;
+package com.farmily.groupbuy.model;
 import java.sql.Timestamp;
 
 import jakarta.persistence.Column;

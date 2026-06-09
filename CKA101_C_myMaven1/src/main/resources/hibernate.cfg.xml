@@ -17,7 +17,7 @@
 		
 		<property name="hibernate.current_session_context_class">thread</property>
 		
-		<mapping class="com.emp.model.GroupBuyVO"/>
+		<mapping class="com.farmily.groupbuy.model.GroupBuyVO"/>
 <!-- 		<mapping class="entity.Dept"/> -->
 <!-- 		<mapping class="entity.Book"/> -->
 <!-- 		<mapping class="entity.BookIsbn"/> -->

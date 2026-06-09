@@ -278,9 +278,8 @@
         <input type="button" value="送出" onclick="fun1()">  <h4>(資料格式驗證  by Java Script).</h4> 
     </FORM>
   </li>
-  <% com.emp.model.GroupBuyHibernateDAO dao = new com.emp.model.GroupBuyHibernateDAO(); %> <% pageContext.setAttribute("dao", dao) ; %> <!-- p204 , p337 -->
+  <% com.farmily.groupbuy.model.GroupBuyHibernateDAO dao = new com.farmily.groupbuy.model.GroupBuyHibernateDAO(); %> <% pageContext.setAttribute("dao", dao) ; %> <!-- p204 , p337 -->
 
-<%--   <jsp:useBean id="dao" scope="page" class="com.emp.model.EmpDAO" /> --%>
    
   <li>
      <FORM METHOD="post" ACTION="<%=request.getContextPath()%>/GroupBuyServlet">

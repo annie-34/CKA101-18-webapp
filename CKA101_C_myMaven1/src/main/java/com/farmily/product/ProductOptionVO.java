@@ -1,4 +1,4 @@
-package com.emp.model;
+package com.farmily.product;
 
 public class ProductOptionVO {
     private Integer productId;

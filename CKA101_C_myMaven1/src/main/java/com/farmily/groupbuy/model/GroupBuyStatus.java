@@ -1,4 +1,4 @@
-package com.emp.model;
+package com.farmily.groupbuy.model;
 
 public enum GroupBuyStatus {
     open("開團中"),

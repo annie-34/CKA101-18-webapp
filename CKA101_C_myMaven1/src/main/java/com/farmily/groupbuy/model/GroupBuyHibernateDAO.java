@@ -1,10 +1,12 @@
-package com.emp.model;
+package com.farmily.groupbuy.model;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
+
+import com.farmily.product.ProductOptionVO;
 
 import util.HibernateUtil;
 public class GroupBuyHibernateDAO implements GroupBuyDAO_interface {

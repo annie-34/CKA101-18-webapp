@@ -1,7 +1,9 @@
-package com.emp.model;
+package com.farmily.groupbuy.model;
 
 import java.sql.Timestamp;
 import java.util.List;
+
+import com.farmily.product.ProductOptionVO;
 
 public class GroupBuyService {
     private GroupBuyDAO_interface dao;
@@ -28,7 +30,6 @@ public class GroupBuyService {
             groupBuyVO.setStatus(GroupBuyStatus.cancelled);
             groupBuyVO.setRejectReason(rejectReason);
         }
-
         dao.update(groupBuyVO);
         return groupBuyVO;
     }
